@@ -41,8 +41,13 @@
 	<p>
 		&raquo; {l s='You can get a PDF documentation to configure this module' mod='solidaritegiletsjaunes'} :
 		<ul>
-			<li><a href="#" target="_blank">{l s='English' mod='solidaritegiletsjaunes'}</a></li>
-			<li><a href="#" target="_blank">{l s='French' mod='solidaritegiletsjaunes'}</a></li>
+			<li><a href="{$module_dir|escape:'htmlall':'UTF-8'}doc/readme_en.pdf" target="_blank">{l s='English' mod='solidaritegiletsjaunes'}</a></li>
+			<li><a href="{$module_dir|escape:'htmlall':'UTF-8'}doc/readme_fr.pdf" target="_blank">{l s='French' mod='solidaritegiletsjaunes'}</a></li>
 		</ul>
 	</p>
+		<br>
+		<p>
+			&raquo; {l s='Bug report on GitHub only' mod='solidaritegiletsjaunes'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes</a><br>
+			&nbsp;&nbsp;&nbsp;{l s='For any bug report, please follow the following process' mod='faq'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors</a>
+		</p>	
 </div>
