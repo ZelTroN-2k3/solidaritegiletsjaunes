@@ -39,6 +39,7 @@ function upgrade_module_1_0_0($module)
      * Do everything you want right there,
      * You could add a column in one of your module's tables
      */
-
-    return true;
+    Configuration::updateValue('SOLIDARITEGILETSJAUNES_LIVE_MODE', 0);
+    
+    return $module;
 }
