@@ -221,14 +221,12 @@ class Solidaritegiletsjaunes extends Module
     }
 
     public function hookDisplayHeader()
-	{
-		/* Place your code here. */
-		$this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
-	}
+    {
+        $this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
+    }
 
     public function hookDisplayTop()
     {
-        /* Place your code here. */
         return $this->display(__FILE__, 'views/templates/hook/solidaritegiletsjaunes.tpl');
     }
 }
