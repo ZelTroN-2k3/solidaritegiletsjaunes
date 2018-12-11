@@ -179,21 +179,13 @@ class Solidaritegiletsjaunes extends Module
     /**
      * Set values for the inputs.
      */
-    protected function getConfigFormValues() {
-    	return array(
-    		'SOLIDARITEGILETSJAUNES_LIVE_MODE' =>
-    		Configuration::get(
-    			'SOLIDARITEGILETSJAUNES_LIVE_MODE',
-    			true),
-    		'SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL' =>
-    		Configuration::get(
-    			'SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL',
-    			'zeltron2k3@gmail.com'),
-    		'SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD' =>
-    		Configuration::get(
-    			'SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD',
-    			null),
-    	);
+    protected function getConfigFormValues()
+    {
+        return array(
+            'SOLIDARITEGILETSJAUNES_LIVE_MODE' => Configuration::get('SOLIDARITEGILETSJAUNES_LIVE_MODE', true),
+            /*'SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL', 'zeltron2k3@gmail.com'),*/
+            /*'SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD', null),*/
+        );
     }
 
     /**
