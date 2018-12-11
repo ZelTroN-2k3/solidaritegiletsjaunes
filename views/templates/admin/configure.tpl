@@ -48,6 +48,6 @@
 		<br>
 		<p>
 			&raquo; {l s='Bug report on GitHub only' mod='solidaritegiletsjaunes'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes</a><br>
-			&raquo; {l s='For any bug report, please follow the following process' mod='faq'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors</a>
+			&raquo; {l s='For any bug report, please follow the following process' mod='solidaritegiletsjaunes'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors</a>
 		</p>	
 </div>
