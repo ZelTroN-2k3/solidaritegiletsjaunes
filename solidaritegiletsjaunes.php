@@ -215,12 +215,12 @@ class Solidaritegiletsjaunes extends Module
      * Add the CSS & JavaScript files you want to be added on the FO.
      */
     public function hookDisplayHeader()
-	{
-		/** 
-		* Place your code here. 
-		*/
-		$this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
-	}
+    {
+	/** 
+	* Place your code here. 
+	*/
+	$this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
+    }
 
     public function hookDisplayTop()
     {
