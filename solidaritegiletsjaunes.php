@@ -1,5 +1,5 @@
 <?php
-/*
+/**
 * 2017-2018 freelance-addons.fr
 *
 * NOTICE OF LICENSE
