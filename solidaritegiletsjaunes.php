@@ -129,7 +129,7 @@ class Solidaritegiletsjaunes extends Module
      */
     protected function getConfigForm()
     {
-/*        return array(
+/**        return array(
             'form' => array(
                 'legend' => array(
                 'title' => $this->l('Settings'),
@@ -183,8 +183,8 @@ class Solidaritegiletsjaunes extends Module
     {
         return array(
             'SOLIDARITEGILETSJAUNES_LIVE_MODE' => Configuration::get('SOLIDARITEGILETSJAUNES_LIVE_MODE', true),
-            /*'SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL', 'zeltron2k3@gmail.com'),*/
-            /*'SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD', null),*/
+            /** 'SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_EMAIL', 'zeltron2k3@gmail.com'), */
+            /** 'SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD' => Configuration::get('SOLIDARITEGILETSJAUNES_ACCOUNT_PASSWORD', null), */
         );
     }
 
@@ -214,19 +214,19 @@ class Solidaritegiletsjaunes extends Module
     /**
      * Add the CSS & JavaScript files you want to be added on the FO.
      */
-    public function hookHeader()
-    {
-        $this->context->controller->addJS($this->_path.'/views/js/front.js');
-        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-    }
-
     public function hookDisplayHeader()
-    {
-        $this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
-    }
+	{
+		/** 
+		* Place your code here. 
+		*/
+		$this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
+	}
 
     public function hookDisplayTop()
     {
+        /** 
+        * Place your code here. 
+        */
         return $this->display(__FILE__, 'views/templates/hook/solidaritegiletsjaunes.tpl');
     }
 }
