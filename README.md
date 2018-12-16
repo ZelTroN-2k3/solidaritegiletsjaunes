@@ -17,13 +17,15 @@ Version
 
 ## License
 
-# Copyright (c) 2018 ZelTroN2k3
+# Copyright (c) 2018 freelance-addons
+# author freelance-addons.fr <zeltron2k3@gmail.com>
+# license   see file: LICENSE.txt
 
-* Ce module permet d'affiche un petit (gilet jaune) en haut Ã  gauche des vestes jaunes pour les supporters du Shop.
-* Pour Ãªtre solidaire avec les gilets Jaunes, installation simple, cela va afficher un gilet jaune su votre boutique FrontOffice, en haut Ã  gauche pour la version fulls Ã©cran pc.
-* Et pour la version mobile celui-ci se trouvera de cÃ´tÃ© droit en haut Ã  gauche.
+* Ce module permet d'affiche un petit (gilet jaune) en haut à gauche des vestes jaunes pour les supporters du Shop.
+* Pour être solidaire avec les gilets Jaunes, installation simple, cela va afficher un gilet jaune su votre boutique FrontOffice, en haut à gauche pour la version fulls écran pc.
+* Et pour la version mobile celui-ci se trouvera de côté droit en haut à gauche.
 
-* J'ai testÃ© le module avec Bootstrap Theme et PS 1.6
+* J'ai testé le module avec Bootstrap Theme et PS 1.6
 
 * Ceci est mon premier module alors laissez-moi savoir si quelque chose ne va pas lors de l'installation
-* Si vous aimez le module, vous pouvez m'envoyer un don via paypal Ã : zeltron2k3@gmail.com
+* Si vous aimez le module, vous pouvez m'envoyer un don via paypal à: zeltron2k3@gmail.com
