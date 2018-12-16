@@ -1,4 +1,10 @@
 <?php
+/**
+*  @author zeltron2k3 SA <zeltron2k3@gmail.com>
+*  @copyright 2017-2018 freelance-addons.fr
+*  @license http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of freelance-addons.fr
+*/
 
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -192,7 +198,7 @@ class Solidaritegiletsjaunes extends Module
      */
     public function hookDisplayHeader()
     {
-	$this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
+        $this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
     }
 
     public function hookDisplayTop()
