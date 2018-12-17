@@ -10,7 +10,9 @@ Tested on
 * Prestashop 1.6.1.15
 
 Version
-* module 1.0.0.
+* module 1.0.0. 
+* module 1.0.1. addons bouton enable/disable image backOffice.
+* module 1.0.2. coming soon. select other images on back office for affichage front office.!!!
 
 ### TODO
 - Make it compatible with PrestaShop 1.6 / 1.7

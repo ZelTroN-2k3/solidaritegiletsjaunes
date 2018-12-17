@@ -23,7 +23,7 @@ class Solidaritegiletsjaunes extends Module
     {
         $this->name = 'solidaritegiletsjaunes';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'ZelTroN2k3';
         $this->need_instance = 1;
         /**
@@ -42,7 +42,7 @@ class Solidaritegiletsjaunes extends Module
      */
     public function install()
     {
-        Configuration::updateValue('SOLIDARITEGILETSJAUNES_LIVE_MODE', false);
+        Configuration::updateValue('D_HEADER', false);
         return parent::install() &&
             $this->registerHook('header') &&
             $this->registerHook('backOfficeHeader') &&
@@ -51,7 +51,7 @@ class Solidaritegiletsjaunes extends Module
     }
     public function uninstall()
     {
-        Configuration::deleteByName('SOLIDARITEGILETSJAUNES_LIVE_MODE');
+        Configuration::deleteByName('D_HEADER');
         return parent::uninstall();
     }
     /**
@@ -62,10 +62,10 @@ class Solidaritegiletsjaunes extends Module
         /**
          * If values have been submitted in the form, process.
          */
-        if (((bool)Tools::isSubmit('submitSolidaritegiletsjaunesModule')) == true) {
+        if (((bool)Tools::isSubmit('submitTemplateModule')) == true) {
             $this->postProcess();
         }
-        $this->context->smarty->assign('module_dir', $this->_path);
+        $this->context->smarty->assign('logo_path_ms', $this->_path.'logo.png');
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/admin/configure.tpl');
         return $output.$this->renderForm();
     }
@@ -81,7 +81,7 @@ class Solidaritegiletsjaunes extends Module
         $helper->default_form_language = $this->context->language->id;
         $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 0);
         $helper->identifier = $this->identifier;
-        $helper->submit_action = 'submitSolidaritegiletsjaunesModule';
+        $helper->submit_action = 'submitTemplateModule';
         $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false)
             .'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
@@ -97,6 +97,39 @@ class Solidaritegiletsjaunes extends Module
      */
     protected function getConfigForm()
     {
+        return array(
+            'form' => array(
+                'legend' => array(
+                'title' => $this->l('Settings'),
+                'icon' => 'icon-cogs',
+                ),
+                'input' => array(
+                    array(
+                        'type' => 'switch',
+                        'label' => $this->l('Header'),
+                        'hint' => $this->l('Display the Yellow Vests at the top of the header.'),
+                        'name' => 'D_HEADER',
+                        'desc' => $this->l('Display the Yellow Vests at the top of the header. This is the extreme top of the web page on the left of your shop.'),
+                        'is_bool' => true,
+                        'values' => array(
+                            array(
+                                'id' => 'active_on',
+                                'value' => true,
+                                'label' => $this->l('Enabled')
+                            ),
+                            array(
+                                'id' => 'active_off',
+                                'value' => false,
+                                'label' => $this->l('Disabled')
+                            )
+                        ),
+                    ),
+                ),
+                'submit' => array(
+                    'title' => $this->l('Save'),
+                ),
+            ),
+        );
     }
     /**
      * Set values for the inputs.
@@ -104,7 +137,7 @@ class Solidaritegiletsjaunes extends Module
     protected function getConfigFormValues()
     {
         return array(
-            'SOLIDARITEGILETSJAUNES_LIVE_MODE' => Configuration::get('SOLIDARITEGILETSJAUNES_LIVE_MODE', true),
+            'D_HEADER' => Configuration::get('D_HEADER', false),
         );
     }
     /**
@@ -114,7 +147,7 @@ class Solidaritegiletsjaunes extends Module
     {
         $form_values = $this->getConfigFormValues();
         foreach (array_keys($form_values) as $key) {
-            Configuration::updateValue($key, Tools::getValue($key));
+            Configuration::updateValue($key, Tools::getValue($key), True);
         }
     }
     /**
@@ -132,10 +165,14 @@ class Solidaritegiletsjaunes extends Module
      */
     public function hookDisplayHeader()
     {
-        $this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css', 'all');
+        $this->context->controller->addCSS($this->_path.'views/css/solidaritegiletsjaunes.css');
+        if (configuration::get('D_HEADER')== TRUE)
+        {
+            return $this->display(__FILE__, 'views/templates/hook/solidaritegiletsjaunes.tpl');
+        }
     }
     public function hookDisplayTop()
     {
-        return $this->display(__FILE__, 'views/templates/hook/solidaritegiletsjaunes.tpl');
+        return $this->hookDisplayHeader();
     }
 }

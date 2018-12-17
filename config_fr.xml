@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>solidaritegiletsjaunes</name>
+	<displayName><![CDATA[Gilets Jaunes Solidaires]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Affiche un petit (gilet jaune) en haut &agrave; gauche des vestes jaunes pour les supporters du guichet]]></description>
+	<author><![CDATA[ZelTroN2k3]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir désinstaller ce module Support Yellow Vests?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

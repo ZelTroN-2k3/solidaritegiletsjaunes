@@ -6,13 +6,11 @@ $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_fc22f18b732
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_ac0687bc369a8860c0dff1e97901f5d6'] = 'Affiche un petit (gilet jaune) en haut à gauche des vestes jaunes pour les supporters du guichet';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_780efedff2229b190b28f6c89feef006'] = 'Êtes-vous sûr de vouloir désinstaller ce module Support Yellow Vests?';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_f4f70727dc34561dfde1a3c529b6205c'] = 'Réglages';
-$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_cebd5bbe0ffdecc270a8a324e5a277dd'] = 'Mode live';
-$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_ea9df7a306e2f8b5af37b67084d0c984'] = 'Utilisez ce module en mode live';
+$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_bf50d5e661106d0abe925af3c2e6f7e7'] = 'Entête';
+$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_add311a8309b6185bf9bae12e225ddc4'] = 'Affichez les gilets jaunes en haut de l\'en-tête.';
+$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_7de412bea6a733668580dda6f908d093'] = 'Affichez les gilets jaunes en haut de l\'en-tête. C\'est l\'extrême haut de la page Web à gauche de votre boutique.';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activée';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_b9f5c797ebbf55adccdd8539a65a0241'] = 'Désactivé';
-$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_cffa70587159989d91e6ce586ea65c14'] = 'Entrez une adresse mail valide';
-$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_ce8ae9da5b7cd6c3df2929543a9af92d'] = 'Email';
-$_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_dc647eb65e6711e155375218212b3964'] = 'Mot de passe';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>solidaritegiletsjaunes_c9cc8cce247e49bae79f15173ce97354'] = 'Sauvegarder';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>configure_fc22f18b732c3c17be06436b701d8c6d'] = 'Gilets Jaunes Solidaires';
 $_MODULE['<{solidaritegiletsjaunes}prestashop>configure_97ef4c38620de4481c6fdf342838c728'] = 'Voici mon nouveau module générique!';

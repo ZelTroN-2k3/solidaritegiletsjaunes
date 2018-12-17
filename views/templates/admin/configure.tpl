@@ -11,7 +11,8 @@
 *}
 
 <div class="panel">
-    <h3><i class="icon icon-credit-card"></i> {l s='Solidarity Yellow Vests' mod='solidaritegiletsjaunes'}</h3>
+    <h3><strong><img  src="{$logo_path_ms|escape:'htmlall':'UTF-8'}" alt="" width="42" align="absmiddle" style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px;"> {l s='Solidarity Yellow Vests' mod='solidaritegiletsjaunes'}</strong></h3>
+    <br />
     <p>
         <strong>{l s='Here is my new generic module!' mod='solidaritegiletsjaunes'}</strong><br />
         {l s='Thanks to PrestaShop, now I have a great module.' mod='solidaritegiletsjaunes'}<br />
@@ -35,6 +36,6 @@
         <br>
         <p>
             &raquo; {l s='Bug report on GitHub only' mod='solidaritegiletsjaunes'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes</a><br>
-            &raquo; {l s='For any bug report, please follow the following process' mod='solidaritegiletsjaunes'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors</a>
+            &raquo; {l s='For any bug report, please follow the following process' mod='faq'} : <a href="https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors" target="_blank">https://github.com/ZelTroN-2k3/solidaritegiletsjaunes/graphs/contributors</a>
         </p>
 </div>
